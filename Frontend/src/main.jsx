@@ -8,6 +8,7 @@ import SignIn from './Pages/Signin.jsx';
 import SidebarPage from './Pages/Sidebar.jsx';
 import CompanyRegister from './Pages/CompanyRegister.jsx';
 import BackupDatabase from './Pages/BackupDatabase.jsx';
+import RemoveDayEndProcess from './Pages/RemoveDayEndProcess.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
     <Route path="/sidebar" element={<SidebarPage />} />
     <Route path="/company-register" element={<CompanyRegister />} />
     <Route path="/backup-database" element={<BackupDatabase />} />
+    <Route path="/remove-dayend-process" element={<RemoveDayEndProcess />} />
     
   </Routes>
   </BrowserRouter>
