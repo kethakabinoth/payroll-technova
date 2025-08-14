@@ -4,6 +4,7 @@ import SignUp from './Pages/Signup'
 import SidebarPage from './Pages/Sidebar'
 import CompanyRegister from './Pages/CompanyRegister'
 import BackupDatabase from './Pages/BackupDatabase'
+import RemoveDayEndProcess from './Pages/RemoveDayEndProcess'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SidebarPage/>
       <CompanyRegister />
       <BackupDatabase />
+      <RemoveDayEndProcess/>
       
     </div>
   )
