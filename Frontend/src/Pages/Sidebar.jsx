@@ -57,7 +57,7 @@ const SidebarPage = () => {
         navigate('/backup-database');
         break;
       case "Remove Dayend Process":
-        navigate('/remove-dayend');
+        navigate('/remove-dayend-process');
         break;
       case "Registration":
         navigate('/registration');
