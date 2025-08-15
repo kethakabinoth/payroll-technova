@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate} from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
 import { FaKey } from 'react-icons/fa';
 
 const SignIn = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('kethaka');
+  const [password, setPassword] = useState('1234');
+   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Sign In submitted:', { username, password });
+
+    navigate('/sidebar'); 
   };
 
   return (
@@ -59,12 +62,17 @@ const SignIn = () => {
             </button>
             <button
               type="button"
+              onClick={() => {
+                setUsername('');
+                setPassword('');
+              }}
               className="bg-green-500 text-white p-5 rounded hover:bg-green-600 w-36 min-h-16 font-bold"
             >
               Reset
             </button>
             <button
-              type="button"
+             type="button"
+              onClick={() => window.close()}
               className="bg-green-500 text-white p-5 rounded hover:bg-green-600 w-36 min-h-16 font-bold"
             >
               Exit
