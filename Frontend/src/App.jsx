@@ -1,25 +1,12 @@
-import React from 'react'
-import SignIn from './Pages/Signin'
-import SignUp from './Pages/Signup'
-import SidebarPage from './Pages/Sidebar'
-import CompanyRegister from './Pages/CompanyRegister'
-import BackupDatabase from './Pages/BackupDatabase'
-import RemoveDayEndProcess from './Pages/RemoveDayEndProcess'
-import Sidebar2 from './Pages/Sidebar2'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <SignIn />
-      <SignUp/>
-      <SidebarPage/>
-      <CompanyRegister />
-      <BackupDatabase />
-      <RemoveDayEndProcess/>
-      <Sidebar2/>
-      
+    <div className="app">
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;  // This is the crucial line that was missing
