@@ -5,6 +5,7 @@ import SidebarPage from './Pages/Sidebar'
 import CompanyRegister from './Pages/CompanyRegister'
 import BackupDatabase from './Pages/BackupDatabase'
 import RemoveDayEndProcess from './Pages/RemoveDayEndProcess'
+import Sidebar2 from './Pages/Sidebar2'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CompanyRegister />
       <BackupDatabase />
       <RemoveDayEndProcess/>
+      <Sidebar2/>
       
     </div>
   )
