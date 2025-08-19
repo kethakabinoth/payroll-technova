@@ -29,6 +29,7 @@ import CForm from './Pages/CForm.jsx';
 import ETFStatement from './Pages/ETFStatement.jsx';
 import OTStatement from './Pages/OTStatement.jsx';
 import PrintPayslip from './Pages/PrintPayslip.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />}>
           <Route path="signup" element={<SignUp />} />
           <Route path="signin" element={<SignIn />} />
+          <Route path="sidebar" element={<Sidebar />} />
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="company-register" element={<CompanyRegister />} />
